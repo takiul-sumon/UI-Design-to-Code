@@ -1,11 +1,31 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:ui_design/Home_page.dart';
 import 'package:ui_design/colors.dart';
 
-class Splash_screan extends StatelessWidget {
+class Splash_screan extends StatefulWidget {
   const Splash_screan({super.key});
 
   @override
+  State<Splash_screan> createState() => _Splash_screanState();
+}
+
+class _Splash_screanState extends State<Splash_screan> {
+ @override
+   void initState() {
+     super.initState();
+     Timer(Duration(seconds: 3),(){
+      Navigator.of(context).pushReplacement( MaterialPageRoute(builder: (context)=> Home_Page()));
+     });
+   }
+
+  @override
   Widget build(BuildContext context) {
+    
+   
+   
+
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(

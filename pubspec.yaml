@@ -77,9 +77,9 @@ flutter:
   fonts:
     - family: Blue
       fonts:
-        - asset: fonts/Schyler-Regular.ttf
-        - asset: fonts/Schyler-Italic.ttf
-          style: italic
+        # - asset: fonts/Schyler-Regular.ttf
+        # - asset: fonts/Schyler-Italic.ttf
+        #   style: italic
         - asset: assets/fonts/Blues.ttf
   #   - family: Trajan Pro
   #     fonts:
