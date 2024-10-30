@@ -16,7 +16,7 @@ class _Splash_screanState extends State<Splash_screan> {
    void initState() {
      super.initState();
      Timer(Duration(seconds: 3),(){
-      Navigator.of(context).pushReplacement( MaterialPageRoute(builder: (context)=> Home_Page()));
+      Navigator.of(context).pushReplacement( MaterialPageRoute(builder: (context)=>const Home_Page()));
      });
    }
 
@@ -55,10 +55,10 @@ class _Splash_screanState extends State<Splash_screan> {
         ],),
 
         const  SizedBox(height: 10),
-        const  Text("Find Your Dream",style: TextStyle(decoration: TextDecoration.none, color: Colors.white,fontSize: 20),),
+        const  Text("Find Your Dream",style: TextStyle(decoration: TextDecoration.none, color: Colors.white,fontSize: 15),),
         const  SizedBox(height: 10),
         const  Text("Destination With Us",
-         style: TextStyle(decoration: TextDecoration.none,color: Colors.white,fontSize: 20),),
+         style: TextStyle(decoration: TextDecoration.none,color: Colors.white,fontSize: 15),),
         ],
       ),
     );
