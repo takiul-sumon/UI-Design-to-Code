@@ -107,7 +107,42 @@ class _Home_PageState extends State<Home_Page> {
                   ),
                 ],
               ),
-            )
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Placeholder(
+                strokeWidth: .1,
+                fallbackHeight: 130,
+                fallbackWidth: double.infinity,
+                child: SizedBox(
+                  height: 300,
+                  width: double.infinity,
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Popular Places',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
+                          ),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "View All",
+                                style: TextStyle(
+                                    color: Colors.black54,
+                                    fontWeight: FontWeight.bold),
+                              ))
+                        ],
+                      )
+                    ],
+                  ),
+                )),
           ],
         ),
       ),
