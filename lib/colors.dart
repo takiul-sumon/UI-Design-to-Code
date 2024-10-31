@@ -7,3 +7,6 @@ Grad(String hexcolor) {
   }
   return Color(int.parse(hexcolor, radix: 16));
 }
+
+
+

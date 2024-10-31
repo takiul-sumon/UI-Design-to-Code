@@ -16,6 +16,8 @@ class _Home_PageState extends State<Home_Page> {
         child: Column(
           children: [
             Placeholder(
+              color: Colors.white,
+              strokeWidth: double.negativeInfinity,
               fallbackHeight: 60,
               fallbackWidth: double.infinity,
               child: SizedBox(
@@ -49,11 +51,63 @@ class _Home_PageState extends State<Home_Page> {
                                 color: Colors.black54))
                       ],
                     ),
-                    CircleAvatar(child: Image.asset("assets/icon/man.png"),)
+                    CircleAvatar(
+                      child: Image.asset("assets/icon/man.png"),
+                    )
                   ],
                 ),
               ),
             ),
+            // TextField(
+            //   onTap: (){},
+
+            // )
+
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(color: Colors.grey[300]!),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Search places',
+                        hintStyle: TextStyle(color: Colors.grey),
+                        border: InputBorder.none,
+                      ),
+                    ),
+                  ),
+                  VerticalDivider(
+                    color: Colors.red,
+                    thickness: 3,
+                    indent: 8,
+                    endIndent: 8,
+                  ),
+                  Container(
+                    height: 30,
+                    width: 3,
+                    color: Colors.amber,
+                  ),
+                  VerticalDivider(
+                    color: Colors.red,
+                    thickness: 3,
+                    indent: 8,
+                    endIndent: 8,
+                  ),
+                  Icon(
+                    Icons.tune, // Filter icon
+                    color: Colors.grey,
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
